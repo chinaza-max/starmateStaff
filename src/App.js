@@ -1,24 +1,33 @@
-import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter, Route, Routes  } from "react-router-dom";
+import { ThemeProvider } from './themeContext';
+
+import DashBoard from "./Pages/DashBoad/DashBoad";
+import Report from "./Pages/Report/Report";
+import Settings from "./Pages/Settings/Settings";
+import Transaction from "./Pages/Transaction/Transaction";
+import Message from "./Pages/Message/Message";
+import Container1 from './Layout/Container1/Container1';
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider>
+      <BrowserRouter>
+        <Routes>
+
+          <Route path="/" element={<Container1/>}>
+            <Route path="/" element={<DashBoard/>}/>
+            <Route path="/Report" element={<Report/>} />
+            <Route path="/Message" element={<Message/>} />
+            <Route path="/Settings" element={<Settings/>} />
+            <Route path="/Transaction" element={<Transaction/>} /> 
+          </Route>
+          
+        </Routes>
+      </BrowserRouter>
+   </ThemeProvider>
   );
 }
 
