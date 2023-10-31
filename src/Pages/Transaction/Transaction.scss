@@ -1,0 +1,16 @@
+.Transaction{
+    margin-top: 20px;
+    padding-bottom: 10px;
+    .MdatePicker{
+        margin-top: 10px;
+        display: flex;
+        justify-content: end;    
+        margin-bottom: 30px;     
+   }
+   .pagination{
+        width: fit-content;
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}

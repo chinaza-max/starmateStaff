@@ -1,0 +1,16 @@
+.DashboadCard{
+    span{
+        color: white;
+        @media (max-width:550px) {
+            font-size: 18px;
+        }
+    }
+    .icon{
+        font-size: 35px;
+        color: white;
+        @media (max-width:900px) {
+            font-size: 45px;
+            color: white;
+        }
+    }
+}

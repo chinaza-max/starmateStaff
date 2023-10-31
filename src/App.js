@@ -8,6 +8,8 @@ import Settings from "./Pages/Settings/Settings";
 import Transaction from "./Pages/Transaction/Transaction";
 import Message from "./Pages/Message/Message";
 import Container1 from './Layout/Container1/Container1';
+import Project from './Pages/Project/Project';
+
 
 
 
@@ -23,6 +25,8 @@ function App() {
             <Route path="/Message" element={<Message/>} />
             <Route path="/Settings" element={<Settings/>} />
             <Route path="/Transaction" element={<Transaction/>} /> 
+            <Route path="/Project" element={<Project/>} /> 
+
           </Route>
           
         </Routes>

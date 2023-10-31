@@ -1,0 +1,10 @@
+.Project {
+  margin: 0 auto;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-top: 50px;
+}
+.Project .tab1 {
+  width: 100%;
+  padding-left: 0px;
+}/*# sourceMappingURL=Project.css.map */

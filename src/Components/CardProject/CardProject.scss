@@ -1,0 +1,32 @@
+.CardProject{
+    .CardProjectContainer{
+        .myBox{
+            width: 400px;
+            @media (max-width:757px) {
+                width: 320px;
+            }
+            @media (max-width:502px) {
+                width: 260px;
+            }
+            @media (max-width:406px) {
+                width: 260px;
+            }
+           
+        }
+        .cards{
+            margin-bottom: 50px;
+            border: 1px solid red;
+        }   
+    }
+    .pagination{
+        width: fit-content;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+   .MdatePicker{
+        margin-top: 10px;
+        display: flex;
+        justify-content: end;    
+        margin-bottom: 30px;  
+   }
+}     

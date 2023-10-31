@@ -1,0 +1,18 @@
+.DashboadCard span {
+  color: white;
+}
+@media (max-width: 550px) {
+  .DashboadCard span {
+    font-size: 18px;
+  }
+}
+.DashboadCard .icon {
+  font-size: 35px;
+  color: white;
+}
+@media (max-width: 900px) {
+  .DashboadCard .icon {
+    font-size: 45px;
+    color: white;
+  }
+}/*# sourceMappingURL=DashboadCard.css.map */
