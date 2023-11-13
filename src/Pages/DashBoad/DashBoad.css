@@ -27,8 +27,24 @@
     top: 230px;
   }
 }
-@media (max-width: 598px) {
+@media (max-width: 599px) {
   .DashBoad .section1 .Card {
     top: 360px;
   }
+}
+.DashBoad .section2 {
+  margin-top: 250px;
+  padding-top: 20px;
+}
+.DashBoad .section2 .PendingProject {
+  margin-bottom: 20px;
+}
+@media (max-width: 599px) {
+  .DashBoad .section2 {
+    margin-top: 520px;
+  }
+}
+.DashBoad .section2 .Containersection2 {
+  max-width: 450px;
+  margin: 0 auto;
 }/*# sourceMappingURL=DashBoad.css.map */

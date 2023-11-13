@@ -4,8 +4,10 @@
     .MdatePicker{
         margin-top: 10px;
         display: flex;
-        justify-content: end;    
+        justify-content: flex-end;    
+    
         margin-bottom: 30px;     
+        margin-right: 8px;  
    }
    .pagination{
         width: fit-content;

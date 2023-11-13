@@ -5,7 +5,6 @@ import Toolbar from '@mui/material/Toolbar';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import Menu from '@mui/material/Menu';
-import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
 import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
@@ -87,83 +86,8 @@ function ResponsiveAppBar() {
                         aria-haspopup="true"
                         onClick={handleOpenNavMenu}
                         >
-                        <MenuIcon />
                         </IconButton>
-                        <Menu
-                        id="menu-appbar"
-                        anchorEl={anchorElNav}
-                        anchorOrigin={{
-                            vertical: 'bottom',
-                            horizontal: 'left',
-                        }}
-                        keepMounted
-                        transformOrigin={{
-                            vertical: 'top',
-                            horizontal: 'left',
-                        }}
-                        open={Boolean(anchorElNav)}
-                        onClose={handleCloseNavMenu}
-                        sx={{
-                            display: { xs: 'block', md: 'none' },
-                        }}
-                        >
-                        {pages.map((page,index) => (
-
-                            <NavLink key={index}
-                                to={page.link}
-                                className={isActive =>
-                                    (isActive.isActive ? "nav-link selected" : "nav-link unselected")
-                                }
-                                >
-                                <MenuItem  onClick={handleCloseNavMenu}>
-
-                                    {
-                                        page.name==="Dashboard" ?
-                                        <div className='iconContainer'>
-                                                <GridViewIcon />
-                                        </div>
-                                        :
-
-                                        page.name==="Transaction" ?
-                                            <div className='iconContainer'>
-                                                <Badge badgeContent={1} color="error">
-                                                    <ReceiptLongIcon />
-                                                </Badge>
-                                            </div>
-                                            :
-                                            page.name==="Report" ?
-                                                <div className='iconContainer'>
-                                                    <Badge badgeContent={4} color="error">
-                                                        <SupervisedUserCircleIcon />
-                                                    </Badge>
-                                                </div>
-                                            :
-
-                                            page.name==="Project" ?
-                                                <div className='iconContainer'>
-                                                    <Badge badgeContent={2} color="error">
-                                                        <LibraryBooksIcon />
-                                                    </Badge>
-                                                </div>
-                                            :
-                                            <div className='iconContainer'>
-                                                <Badge badgeContent={2} color="error">
-                                                    <MailIcon />
-                                                </Badge>
-                                            </div>
-                                    
-                                    }
-
-                                    <Typography textAlign="center" className='navName2'>{page.name}</Typography>
-
-                                </MenuItem>
-
-                                <span className='lineSelector'></span>
-
-                            </NavLink>
-
-                        ))}
-                        </Menu>
+                       
                     </Box>
                     <Typography
                         variant="h5"

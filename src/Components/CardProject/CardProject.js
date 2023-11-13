@@ -8,6 +8,8 @@ import Typography from '@mui/material/Typography';
 import Pagination from '@mui/material/Pagination';
 import MDatePicker from "../../Components/MDatePicker/MDatePicker"
 import Alert from '@mui/material/Alert';
+import { useNavigate  } from "react-router-dom";
+
 
 
   
@@ -21,9 +23,11 @@ const bull = (
   );
 
 export default function CardProject(props) {
+    const navigate=useNavigate()
 
-
-
+    const gotoDetails=()=>{
+        navigate("/Project/Details");
+    }
 
   return (
     <div className='CardProject'>
@@ -61,7 +65,7 @@ export default function CardProject(props) {
                       <Typography level="body-xs" fontWeight="lg">
                           Pay out
                       </Typography>
-                      <Typography fontWeight="lg">NGN 980</Typography>
+                      <Typography fontWeight="lg">₦ 9000</Typography>
                       </div>
                       <div>
                       <Typography level="body-xs" fontWeight="lg">
@@ -74,7 +78,7 @@ export default function CardProject(props) {
 
 
                       <Box sx={{ display: 'flex', gap: 1.5, '& > button': { flex: 1 } }}>
-                          <Button variant="outlined">View</Button>
+                          <Button variant="outlined" onClick={gotoDetails} >View</Button>
                           <Button variant="contained">Clock in</Button>
                       </Box>
 
@@ -112,7 +116,7 @@ export default function CardProject(props) {
                     <Typography level="body-xs" fontWeight="lg">
                         Pay out
                     </Typography>
-                    <Typography fontWeight="lg">NGN 980</Typography>
+                    <Typography fontWeight="lg">₦ 9000</Typography>
                     </div>
                     <div>
                     <Typography level="body-xs" fontWeight="lg">
@@ -125,7 +129,7 @@ export default function CardProject(props) {
 
 
                     <Box sx={{ display: 'flex', gap: 1.5, '& > button': { flex: 1 } }}>
-                        <Button variant="outlined">View</Button>
+                        <Button variant="outlined" onClick={gotoDetails} >View</Button>
                         <Button variant="contained">Clock in</Button>
                     </Box>
 
@@ -163,7 +167,7 @@ export default function CardProject(props) {
                       <Typography level="body-xs" fontWeight="lg">
                           Pay out
                       </Typography>
-                      <Typography fontWeight="lg">NGN 980</Typography>
+                      <Typography fontWeight="lg">₦ 9000</Typography>
                       </div>
                       <div>
                       <Typography level="body-xs" fontWeight="lg">
@@ -176,7 +180,7 @@ export default function CardProject(props) {
 
 
                       <Box sx={{ display: 'flex', gap: 1.5, '& > button': { flex: 1 } }}>
-                          <Button variant="outlined">View</Button>
+                          <Button variant="outlined" onClick={gotoDetails} >View</Button>
                           <Button variant="contained">Clock in</Button>
                       </Box>
 
@@ -214,7 +218,7 @@ export default function CardProject(props) {
                   <Typography level="body-xs" fontWeight="lg">
                       Pay out
                   </Typography>
-                  <Typography fontWeight="lg">NGN 980</Typography>
+                  <Typography fontWeight="lg">₦ 9000</Typography>
                   </div>
                   <div>
                   <Typography level="body-xs" fontWeight="lg">
@@ -227,7 +231,7 @@ export default function CardProject(props) {
 
 
                   <Box sx={{ display: 'flex', gap: 1.5, '& > button': { flex: 1 } }}>
-                      <Button variant="outlined">View</Button>
+                      <Button variant="outlined" onClick={gotoDetails} >View</Button>
                       <Button variant="contained">Clock in</Button>
                   </Box>
 
@@ -282,7 +286,7 @@ export default function CardProject(props) {
                 <Typography level="body-xs" fontWeight="lg">
                     Pay out
                 </Typography>
-                <Typography fontWeight="lg">NGN 980</Typography>
+                <Typography fontWeight="lg">₦ 9000</Typography>
                 </div>
                 <div>
                 <Typography level="body-xs" fontWeight="lg">
@@ -295,7 +299,7 @@ export default function CardProject(props) {
 
 
                 <Box sx={{ display: 'flex', gap: 1.5, '& > button': { flex: 1 } }}>
-                    <Button variant="outlined">View</Button>
+                    <Button variant="outlined" onClick={gotoDetails} >View</Button>
                 </Box>
 
             </CardContent>
@@ -332,7 +336,7 @@ export default function CardProject(props) {
               <Typography level="body-xs" fontWeight="lg">
                   Pay out
               </Typography>
-              <Typography fontWeight="lg">NGN 980</Typography>
+              <Typography fontWeight="lg">₦ 9000</Typography>
               </div>
               <div>
               <Typography level="body-xs" fontWeight="lg">
@@ -345,7 +349,7 @@ export default function CardProject(props) {
 
 
               <Box sx={{ display: 'flex', gap: 1.5, '& > button': { flex: 1 } }}>
-                  <Button variant="outlined">View</Button>
+                  <Button variant="outlined" onClick={gotoDetails} >View</Button>
               </Box>
 
             </CardContent>
@@ -382,7 +386,7 @@ export default function CardProject(props) {
                 <Typography level="body-xs" fontWeight="lg">
                     Pay out
                 </Typography>
-                <Typography fontWeight="lg">NGN 980</Typography>
+                <Typography fontWeight="lg">₦ 9000</Typography>
                 </div>
                 <div>
                 <Typography level="body-xs" fontWeight="lg">
@@ -395,7 +399,7 @@ export default function CardProject(props) {
 
 
                 <Box sx={{ display: 'flex', gap: 1.5, '& > button': { flex: 1 } }}>
-                    <Button variant="outlined">View</Button>
+                    <Button variant="outlined" onClick={gotoDetails} >View</Button>
                 </Box>
 
             </CardContent>
@@ -432,7 +436,7 @@ export default function CardProject(props) {
             <Typography level="body-xs" fontWeight="lg">
                 Pay out
             </Typography>
-            <Typography fontWeight="lg">NGN 980</Typography>
+            <Typography fontWeight="lg">₦ 9000</Typography>
             </div>
             <div>
             <Typography level="body-xs" fontWeight="lg">
@@ -445,7 +449,7 @@ export default function CardProject(props) {
 
 
             <Box sx={{ display: 'flex', gap: 1.5, '& > button': { flex: 1 } }}>
-                <Button variant="outlined">View</Button>
+                <Button variant="outlined" onClick={gotoDetails} >View</Button>
                 
             </Box>
 
@@ -505,7 +509,7 @@ export default function CardProject(props) {
                   <Typography level="body-xs" fontWeight="lg">
                       Pay out
                   </Typography>
-                  <Typography fontWeight="lg">NGN 980</Typography>
+                  <Typography fontWeight="lg">₦ 9000</Typography>
                   </div>
                   <div>
                   <Typography level="body-xs" fontWeight="lg">
@@ -518,7 +522,7 @@ export default function CardProject(props) {
 
 
                   <Box sx={{ display: 'flex', gap: 1.5, '& > button': { flex: 1 } }}>
-                      <Button variant="outlined">View</Button>
+                      <Button variant="outlined" onClick={gotoDetails} >View</Button>
                   </Box>
 
               </CardContent>
@@ -555,7 +559,7 @@ export default function CardProject(props) {
                 <Typography level="body-xs" fontWeight="lg">
                     Pay out
                 </Typography>
-                <Typography fontWeight="lg">NGN 980</Typography>
+                <Typography fontWeight="lg">₦ 9000</Typography>
                 </div>
                 <div>
                 <Typography level="body-xs" fontWeight="lg">
@@ -568,7 +572,7 @@ export default function CardProject(props) {
 
 
                 <Box sx={{ display: 'flex', gap: 1.5, '& > button': { flex: 1 } }}>
-                    <Button variant="outlined">View</Button>
+                    <Button variant="outlined" onClick={gotoDetails} >View</Button>
                 </Box>
 
               </CardContent>
@@ -605,7 +609,7 @@ export default function CardProject(props) {
                   <Typography level="body-xs" fontWeight="lg">
                       Pay out
                   </Typography>
-                  <Typography fontWeight="lg">NGN 980</Typography>
+                  <Typography fontWeight="lg">₦ 9000</Typography>
                   </div>
                   <div>
                   <Typography level="body-xs" fontWeight="lg">
@@ -618,7 +622,7 @@ export default function CardProject(props) {
 
 
                   <Box sx={{ display: 'flex', gap: 1.5, '& > button': { flex: 1 } }}>
-                      <Button variant="outlined">View</Button>
+                      <Button variant="outlined"onClick={gotoDetails} >View</Button>
                   </Box>
 
               </CardContent>
@@ -655,7 +659,7 @@ export default function CardProject(props) {
               <Typography level="body-xs" fontWeight="lg">
                   Pay out
               </Typography>
-              <Typography fontWeight="lg">NGN 980</Typography>
+              <Typography fontWeight="lg">₦ 9000</Typography>
               </div>
               <div>
               <Typography level="body-xs" fontWeight="lg">

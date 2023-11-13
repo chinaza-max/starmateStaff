@@ -2,15 +2,19 @@
     .CardProjectContainer{
         .myBox{
             width: 400px;
+            margin: 0 auto;
+            margin-bottom: 10px;
             @media (max-width:757px) {
-                width: 320px;
+                width: 93%;
+                min-width: 250px;
             }
+/*
             @media (max-width:502px) {
-                width: 260px;
+                width: 260px;   
             }
             @media (max-width:406px) {
                 width: 260px;
-            }
+            }*/
            
         }
         .cards{
@@ -26,7 +30,7 @@
    .MdatePicker{
         margin-top: 10px;
         display: flex;
-        justify-content: end;    
+        justify-content: flex-end;    
         margin-bottom: 30px;  
    }
 }     

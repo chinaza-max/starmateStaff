@@ -1,19 +1,19 @@
 .CardProject .CardProjectContainer .myBox {
   width: 400px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  /*
+              @media (max-width:502px) {
+                  width: 260px;   
+              }
+              @media (max-width:406px) {
+                  width: 260px;
+              }*/
 }
 @media (max-width: 757px) {
   .CardProject .CardProjectContainer .myBox {
-    width: 320px;
-  }
-}
-@media (max-width: 502px) {
-  .CardProject .CardProjectContainer .myBox {
-    width: 260px;
-  }
-}
-@media (max-width: 406px) {
-  .CardProject .CardProjectContainer .myBox {
-    width: 260px;
+    width: 93%;
+    min-width: 250px;
   }
 }
 .CardProject .CardProjectContainer .cards {
@@ -29,6 +29,6 @@
 .CardProject .MdatePicker {
   margin-top: 10px;
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   margin-bottom: 30px;
 }/*# sourceMappingURL=CardProject.css.map */

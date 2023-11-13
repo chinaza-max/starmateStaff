@@ -29,7 +29,7 @@ export default function DashboadCard() {
 
 
 
-    const iconArray = [{description:"JOB COMPLETED",Icon:StarOutlineIcon,count:completed,color:"green"}, {description:"ACTIVE JOB",Icon:NewspaperIcon,count:active,color:"blue"}, {description:"PENDING JOB",Icon:PendingIcon,count:pending,color:"purple"}, {description:"NGN",Icon:AccountBalanceWalletIcon,count:money,color:"#03332e"}];
+    const iconArray = [{description:"JOB COMPLETED",Icon:StarOutlineIcon,count:completed,color:"green"}, {description:"ACTIVE JOB",Icon:NewspaperIcon,count:active,color:"blue"}, {description:"PENDING JOB",Icon:PendingIcon,count:pending,color:"purple"}, {description:"₦",Icon:AccountBalanceWalletIcon,count:money,color:"#03332e"}];
 
 
   return (

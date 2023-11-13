@@ -63,7 +63,7 @@ export default function Transaction() {
                 <Typography level="body-xs" fontWeight="lg">
                     Amount
                 </Typography>
-                <Typography fontWeight="lg">NGN 2000</Typography>
+                <Typography fontWeight="lg">₦ 2000</Typography>
                 </div>
 
                 </Box >
@@ -112,7 +112,7 @@ export default function Transaction() {
                 <Typography level="body-xs" fontWeight="lg">
                     Amount
                 </Typography>
-                <Typography fontWeight="lg">NGN 2000</Typography>
+                <Typography fontWeight="lg">₦ 2000</Typography>
                 </div>
 
                 </Box >
@@ -162,7 +162,7 @@ export default function Transaction() {
     <Typography level="body-xs" fontWeight="lg">
         Amount
     </Typography>
-    <Typography fontWeight="lg">NGN 2000</Typography>
+    <Typography fontWeight="lg">₦ 2000</Typography>
     </div>
 
     </Box >
@@ -211,7 +211,7 @@ export default function Transaction() {
     <Typography level="body-xs" fontWeight="lg">
         Amount
     </Typography>
-    <Typography fontWeight="lg">NGN 2000</Typography>
+    <Typography fontWeight="lg">₦ 2000</Typography>
     </div>
 
     </Box >

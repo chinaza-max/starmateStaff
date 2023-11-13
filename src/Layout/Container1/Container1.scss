@@ -1,9 +1,15 @@
 .Container1{
+    height: fit-content;
+    overflow-x: hidden;
+    margin-bottom:40px;
     .body{
         margin: 0 auto;
         max-width: 700px;
         height: 700px;
         padding-top: 90px;
+        border: 1px solid hsl(0, 100%, 50%);
+        height: fit-content;
+        padding-bottom: 40px;
         @media (max-width:900px) {
             padding-top: 55px;
         }
@@ -14,6 +20,21 @@
         right: 0;
         left: 0;
         z-index: 2;
+    }
+    .bottomNav{
+        display: none;
+        position: fixed;
+        bottom: 0px;
+        @media (max-width:898px) {
+            display: flex;
+            position: fixed;
+            bottom: 0px;
+            overflow: hidden;
+        }
+        .containerBottomNav{
+            border: 1px solid red;
+            width: 100%;
+        }
     }
 }
 

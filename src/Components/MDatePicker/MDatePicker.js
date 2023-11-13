@@ -23,9 +23,15 @@ export default function DatePickerValue(props) {
 
 
   return (
-    <LocalizationProvider dateAdapter={AdapterDayjs}>
-      <DemoContainer components={['DatePicker']}>
+    <LocalizationProvider dateAdapter={AdapterDayjs}  >
+      <DemoContainer    components={['DatePicker']}>
         <DatePicker
+          sx={{
+            '& .MuiInputBase-root': {
+              height: '43px',
+              overflow:"hidden"
+            },
+          }}
           label="From"
           value={value}
           onChange={(newValue) => handleDateChange(newValue) }

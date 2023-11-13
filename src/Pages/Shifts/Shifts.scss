@@ -1,0 +1,31 @@
+   .Shifts{
+    overflow: hidden;
+    height: 100vh;
+        .scrollBoxRef{
+            .Body{
+                max-width: 700px;
+                margin: 0 auto;
+                margin-top:15px;
+                margin-bottom: 100px;
+                .select{
+                    display: flex;
+                    justify-content: flex-end;
+                    margin-bottom: 35px;
+                    .datePickerContainerPosition{
+                        height: 30px;
+                        .datePicker{
+                            height: 30px;
+                            border: 1px solid red;
+                        }  
+                    }
+                }
+                .pagination{
+                    width: fit-content;
+                    margin: 0 auto;
+                    margin-top: 40px;
+                    margin-bottom: 40px;
+                }
+            }
+           
+        }
+   }

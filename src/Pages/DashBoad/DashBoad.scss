@@ -24,10 +24,25 @@
             @media (max-width:899px) {
                 top: 230px; 
             }
-            @media (max-width:598px) {
+            @media (max-width:599px) {
                 top: 360px; 
             }
             
+        }
+    }
+    .section2{
+        margin-top: 250px;
+        padding-top: 20px;
+        .PendingProject{
+            margin-bottom: 20px;
+        }
+       @media (max-width:599px) {
+        margin-top: 520px;
+
+       }
+        .Containersection2{
+            max-width: 450px;
+            margin: 0 auto;
         }
     }
 }

@@ -1,0 +1,29 @@
+.Shifts {
+  overflow: hidden;
+  height: 100vh;
+}
+.Shifts .scrollBoxRef .Body {
+  max-width: 700px;
+  margin: 0 auto;
+  margin-top: 15px;
+  margin-bottom: 100px;
+}
+.Shifts .scrollBoxRef .Body .select {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 35px;
+}
+.Shifts .scrollBoxRef .Body .select .datePickerContainerPosition {
+  height: 30px;
+}
+.Shifts .scrollBoxRef .Body .select .datePickerContainerPosition .datePicker {
+  height: 30px;
+  border: 1px solid red;
+}
+.Shifts .scrollBoxRef .Body .pagination {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}/*# sourceMappingURL=Shifts.css.map */

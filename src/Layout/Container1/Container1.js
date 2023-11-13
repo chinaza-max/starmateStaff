@@ -1,6 +1,8 @@
 import React from 'react'
 import {Outlet} from "react-router-dom";
 import Navigation  from "../../Components/Navigation/Navigation"
+import BottomNav  from "../../Components/BottomNav/BottomNav"
+
 import "./Container1.css"
 
 export default function Container1() {
@@ -12,6 +14,10 @@ export default function Container1() {
 
         <div className='body'>
           <Outlet/>
+        </div>
+
+        <div className='bottomNav'>
+          <BottomNav/>
         </div>
       
     </div>

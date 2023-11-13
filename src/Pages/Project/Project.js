@@ -1,4 +1,5 @@
-import React from 'react'
+import React,{useEffect} from 'react'
+
 import "./Project.css"
 import Box from '@mui/material/Box';
 import Tab from '@mui/material/Tab';
@@ -20,6 +21,20 @@ export default function Project() {
     const handleChange = (event, newValue) => {
       setValue(newValue);
     };
+
+
+  useEffect(()=>{
+
+    let myDataPValue=localStorage.getItem("selectedNavProject")
+
+    if(myDataPValue!==null&&myDataPValue!=="null"){
+      setValue(myDataPValue)
+      localStorage.setItem("selectedNavProject",null)
+    }
+  },[value])
+
+
+
 
   return (
     <div className='Project'>

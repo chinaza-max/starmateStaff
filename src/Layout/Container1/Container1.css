@@ -1,8 +1,18 @@
+.Container1 {
+  height: -moz-fit-content;
+  height: fit-content;
+  overflow-x: hidden;
+  margin-bottom: 40px;
+}
 .Container1 .body {
   margin: 0 auto;
   max-width: 700px;
   height: 700px;
   padding-top: 90px;
+  border: 1px solid hsl(0, 100%, 50%);
+  height: -moz-fit-content;
+  height: fit-content;
+  padding-bottom: 40px;
 }
 @media (max-width: 900px) {
   .Container1 .body {
@@ -15,4 +25,21 @@
   right: 0;
   left: 0;
   z-index: 2;
+}
+.Container1 .bottomNav {
+  display: none;
+  position: fixed;
+  bottom: 0px;
+}
+@media (max-width: 898px) {
+  .Container1 .bottomNav {
+    display: flex;
+    position: fixed;
+    bottom: 0px;
+    overflow: hidden;
+  }
+}
+.Container1 .bottomNav .containerBottomNav {
+  border: 1px solid red;
+  width: 100%;
 }/*# sourceMappingURL=Container1.css.map */

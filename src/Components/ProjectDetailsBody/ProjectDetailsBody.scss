@@ -1,0 +1,135 @@
+.ProjectDetailsBody{
+    width: 100%;
+}
+
+.ProjectDetailsBody >ul{
+    display: flex;
+    list-style: none;
+    padding: 0px;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-top: 25px;
+    flex-wrap: wrap;
+    padding: 10px 5px 10px 5px;
+    border-radius: 4%;
+}
+.ProjectDetailsBody .buttons{
+    width: 100%;
+    margin-top: 30px;
+
+    @media (max-width:295px) {
+        height: 120px;
+    }
+     >ul {
+        display: flex;
+        list-style: none;
+        padding: 0px;
+        justify-content:space-evenly;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        width: 70%;
+        height: 100px;
+        @media (max-width:500px) {
+            width: 100%;
+        }
+        @media (max-width:295px) {
+            height: 170px;
+        }
+    }
+}
+
+.ProjectDetailsBody >div >h4 {
+   text-align: center;
+}
+
+.ProjectDetailsBody >div >ul >li {
+   // width: 100px;
+    div{
+        min-width: 80px;
+    }
+}
+
+.ProjectDetailsBody >ul >li {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.ProjectDetailsBody >ul >li:nth-child(1) {
+    width: 165px;
+    line-height: 30px;
+}
+
+.ProjectDetailsBody >ul >li:nth-child(2) {
+    text-align: left;
+}
+
+/*
+.ProjectDetailsBody >ul >li:nth-child(2) >div {
+
+}
+*/
+
+.ProjectDetailsBody >ul >li:nth-child(2) .active {
+    border: 4px dashed yellow;
+    width: 100px;
+    height: 25px;
+    text-align: center;
+    padding-top: 3px;
+    animation: moveBorder 2s linear infinite;
+
+ }
+ 
+.ProjectDetailsBody >ul >li:nth-child(2) .pending {
+    border: 4px dashed red;
+    width: 100px;
+    height: 25px;
+    text-align: center;
+    padding-top: 3px;
+ }
+ .ProjectDetailsBody >ul >li:nth-child(2) .complete {
+     border: 4px dashed green;
+     width: 100px;
+     height: 25px;
+     text-align: center;
+     padding-top: 3px;
+  }
+
+
+  @keyframes moveBorder {
+    0% {
+      border: 2px dashed transparent;
+    }
+    25% {
+      border: 2px dashed yellow;
+    }
+    50% {
+      border: 2px dashed transparent;
+    }
+    75% {
+      border: 2px dashed yellow;
+    }
+    100% {
+      border: 2px dashed transparent;
+    }
+  }
+
+.ProjectDetailsBody >ul >li:nth-child(2) >p {
+   max-height: 140px;
+   overflow: auto;
+   font-size: 15px;
+   padding-top: 5px;
+   padding-right: 5px;
+ }
+
+.ProjectDetailsBody{
+    margin-top: 20px;
+}
+
+.ProjectDetailsBody >ul:nth-child(odd){
+   background-color: rgba(242, 245, 239, 0.988);
+}
+
