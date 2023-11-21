@@ -1,5 +1,30 @@
 .Location{
+    width: 100%;
+    .icon{
+        display: flex;
+        align-items: center; 
+    }
+    .title{
+        display: flex;
+        align-items: center; 
+    }
+    ul{
+        position: fixed;
+        top: 0;
+        list-style: none;
+        display: flex;
+        flex: 1;
+        height: 80px;
+        background-color: white;
+        justify-content: space-around;
+        width: 100%;
+        padding-top: 20px;
+        li{
+            color: black;
+        }
+    }
    .LocationContainer{
+        margin-top: 90px;
         .mapContainer{
             margin: 0 auto;
         }

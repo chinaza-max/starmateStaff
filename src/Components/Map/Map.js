@@ -1,53 +1,53 @@
-import React, { useRef, useEffect, useState } from 'react';
+import React, { useRef, useEffect, useState } from 'react'
 
-const MapContainer = ({ origin, destination,  routeP }) => {
-  const mapRef = useRef(null);
-  const [distance, setDistance] = useState(null);
-
+const MapContainer = ({ origin, destination, routeP, setDistanceP }) => {
+  const mapRef = useRef(null)
+  const [distance, setDistance] = useState(null)
 
   useEffect(() => {
-    const directionsService = new window.google.maps.DirectionsService();
-    const directionsRenderer = new window.google.maps.DirectionsRenderer();
+    const directionsService = new window.google.maps.DirectionsService()
+    const directionsRenderer = new window.google.maps.DirectionsRenderer()
     const mapOptions = {
       center: origin,
-      zoom: 14,
-    };
+      zoom: 30
+      // mapTypeId: 'satellite',
+    }
 
-    const map = new window.google.maps.Map(mapRef.current, mapOptions);
+    const map = new window.google.maps.Map(mapRef.current, mapOptions)
 
-    directionsRenderer.setMap(map);
-    directionsRenderer.setOptions({ polylineOptions: { strokeColor: 'red' } });
+    directionsRenderer.setMap(map)
+    directionsRenderer.setOptions({ polylineOptions: { strokeColor: 'red' } })
 
     const originMarker = new window.google.maps.Marker({
       position: origin,
       map: map,
-      title: 'Origin',
-    });
+      title: 'Origin'
+    })
 
     const destinationMarker = new window.google.maps.Marker({
       position: destination,
       map: map,
-      title: 'Destination',
-    });
+      title: 'Destination'
+    })
 
     const request = {
       origin,
       destination,
       travelMode: routeP
-    };
+    }
 
     directionsService.route(request, (result, status) => {
       if (status === 'OK') {
-        directionsRenderer.setDirections(result);
-        setDistance(result.routes[0].legs[0].distance.text);
+        directionsRenderer.setDirections(result)
+        setDistanceP(result.routes[0].legs[0].distance.text)
         console.log(result.routes[0].legs[0].distance.text)
       } else {
-        console.error(`Error fetching directions: ${status}`);
+        console.error(`Error fetching directions: ${status}`)
       }
-    });
-  }, [origin, destination]);
+    })
+  }, [origin, destination])
 
-  return <div ref={mapRef} style={{ height: '500px', width: '100%' }} />;
-};
+  return <div ref={mapRef} style={{ height: '500px', width: '100%' }} />
+}
 
-export default MapContainer;
+export default MapContainer

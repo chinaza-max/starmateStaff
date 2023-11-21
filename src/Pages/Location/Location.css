@@ -1,3 +1,32 @@
+.Location {
+  width: 100%;
+}
+.Location .icon {
+  display: flex;
+  align-items: center;
+}
+.Location .title {
+  display: flex;
+  align-items: center;
+}
+.Location ul {
+  position: fixed;
+  top: 0;
+  list-style: none;
+  display: flex;
+  flex: 1;
+  height: 80px;
+  background-color: white;
+  justify-content: space-around;
+  width: 100%;
+  padding-top: 20px;
+}
+.Location ul li {
+  color: black;
+}
+.Location .LocationContainer {
+  margin-top: 90px;
+}
 .Location .LocationContainer .mapContainer {
   margin: 0 auto;
 }/*# sourceMappingURL=Location.css.map */
